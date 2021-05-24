@@ -5,7 +5,7 @@ import java.util.List;
 
 import graphs.WeightedGraphs.FloydWarshallAllShortestPath;
 
-public class newclass {
+public class Main {
 	public static void main(String[] args) {
 		
 		ArrayList<Integer> vertices = new ArrayList<>();
@@ -16,6 +16,7 @@ public class newclass {
         vertices.add(3);
         vertices.add(4);
         vertices.add(5);
+	// make a graph
         WeightedGraphs<Integer> graph = new WeightedGraphs<Integer>(vertices);
         graph.addEdge(0, 1, true, 2);
         graph.addEdge(0, 4, true, 1);
@@ -24,7 +25,7 @@ public class newclass {
         graph.addEdge(4, 2, true, 2);
         graph.addEdge(4, 5, true, 4);
         graph.addEdge(5, 3, true, 1);
-        
+        // demo to print the shortest distances between vertices using Floyd Warshall Algorithm
         FloydWarshallAllShortestPath f = graph.new FloydWarshallAllShortestPath();
         f.shortestPathBetweenVertices(0, 0);
         f.shortestPathBetweenVertices(0, 1);
