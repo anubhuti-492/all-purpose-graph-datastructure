@@ -7,7 +7,7 @@ import graphs.WeightedGraphs.FloydWarshallAllShortestPath;
 
 public class Main {
 	public static void main(String[] args) {
-		
+		System.out.println("starting the service");
 		ArrayList<Integer> vertices = new ArrayList<>();
 		// add vertices
         vertices.add(0);
